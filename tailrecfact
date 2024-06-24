@@ -1,0 +1,8 @@
+def tailrecfact(n,k):
+    if(n==0|n==1):
+        return k
+    return tailrecfact(n-1,k*n)
+n=int(input("n?"))
+res=tailrecfact(n,k=1)
+print(res)    
+    

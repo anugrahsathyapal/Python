@@ -1,0 +1,7 @@
+def tailrec1n(n,k):
+    if n==0:
+        return
+    print(k,end=' ')
+    tailrec1n(n-1,k+1)
+n=int(input("n?"))    
+tailrec1n(n,k=1)
